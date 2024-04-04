@@ -267,6 +267,7 @@ a {
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    margin-right: 10px;
     flex: 1 0 20%;
 }
 
@@ -308,6 +309,7 @@ a {
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    margin-right: 10px;
     flex: 1 0 20%;
 }
 
@@ -399,12 +401,14 @@ a {
     background-color: #000032;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: small;
     margin-top: 30px;
     padding-left: auto;
     padding-right: auto;
     list-style-type: none;
+
 }
 
 .headings {
@@ -432,4 +436,29 @@ a {
 .list {
     list-style-type: none;
     color: white;
+}
+
+@media (max-width: 468px) {
+    .last1 {
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-1 {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .info-2 {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
 }
